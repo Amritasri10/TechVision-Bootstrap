@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Vision-A Blog Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="https://tse4.mm.bing.net/th?id=OIP.vIjA5vZ6uh6_VznRsd00-wHaEo&pid=Api&P=0&h=180"
+    type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tech Vision</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blogs
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Coding</a>
+                <a class="dropdown-item" href="#">Development</a>
+                <a class="dropdown-item" href="#">Education</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact</a>
+            </li>
+          </ul>
+    
+          <!-- Add Form and Buttons Section -->
+          <div class="d-flex ms-auto gap-3 align-items-center">
+            <!-- Search Form -->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+    
+            <!-- Login Button -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Login
+            </button>
+    
+            <!-- Sign Up Button -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signUpModal">
+              Sign Up
+            </button>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- Modal for Login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Login Form -->
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Log In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal for Sign Up -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signUpModalLabel">Sign Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Sign Up Form -->
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-6">
+              <label for="inputDob" class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" id="inputDob">
+            </div>
+            <div class="col-12">
+              <label class="form-label d-block">Gender</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" checked>
+                <label class="form-check-label" for="genderMale">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
+                <label class="form-check-label" for="genderFemale">Female</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>        
+</nav> 
+
+    <!-- crousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+             <div class="carousel-item active">
+                <img src="https://this.deakin.edu.au/wp-content/uploads/2019/06/coding-on-a-computer.jpg"
+                style="height: 30rem;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Coding Blogs</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg"
+                    style="height: 30rem;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Development Blogs</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img src="https://egeniq.com/wp-content/uploads/2022/07/frontend_webdeveloper.jpg"
+                    style="height: 30rem;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Educational Blogs</h2>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- Blogs Section -->
+    <div class="container d-flex flex-wrap justify-content-evenly my-4">
+
+        <!-- Card 1 -->
+        <div class="card mb-4 me-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.xYEW4bjrO3sT_04SUgLLmAHaE8&pid=Api&P=0&h=180"
+                class="img-fluid w-100 rounded-start align-self-stretch" alt="Image 1" style="object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+                <div>
+                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                <h5 class="card-title">Featured Post 1</h5>
+                <div class="mb-1 text-body-secondary">March 23, 2025</div>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <a href="#" class="stretched-link text-decoration-none text-primary">Continue reading →</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="card mb-4 me-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.owWlxIYlHOEFwBe2fWW_UgHaD4&pid=Api&P=0&h=180"
+                class="img-fluid w-100 rounded-start align-self-stretch" alt="Image 2" style="object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+                <div>
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Technology</strong>
+                <h5 class="card-title">Featured Post 2</h5>
+                <div class="mb-1 text-body-secondary">March 25, 2025</div>
+                <p class="card-text">Explore the latest advancements in technology and how they are shaping our world.</p>
+                </div>
+                <a href="#" class="stretched-link text-decoration-none text-primary">Continue reading →</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="card mb-4 me-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.p55HeEYS5E8KO-PIkotJYQHaE7&pid=Api&P=0&h=180"
+                class="img-fluid w-100 rounded-start align-self-stretch" alt="Image 3" style="object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+                <div>
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Travel</strong>
+                <h5 class="card-title">Featured Post 3</h5>
+                <div class="mb-1 text-body-secondary">March 27, 2025</div>
+                <p class="card-text">Discover breathtaking places and travel experiences that will leave you inspired.</p>
+                </div>
+                <a href="#" class="stretched-link text-decoration-none text-primary">Continue reading →</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="card mb-4" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex">
+            <img src="https://wallpaperaccess.com/full/1947484.jpg"
+                class="img-fluid w-100 rounded-start align-self-stretch" alt="Image 4" style="object-fit: cover;">
+            </div>
+            <div class="col-md-8">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+                <div>
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Inspiration</strong>
+                <h5 class="card-title">Featured Post 4</h5>
+                <div class="mb-1 text-body-secondary">March 29, 2025</div>
+                <p class="card-text">Motivational stories and inspiring journeys to fuel your day.</p>
+                </div>
+                <a href="#" class="stretched-link text-decoration-none text-primary">Continue reading →</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+    </div>    
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-light py-4 mt-5 border-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <p class="mb-2 mb-md-0 text-center text-md-start">
+            © 2024–2025 <span class="fw-semibold">TechVision</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed by <span class="fw-semibold">Amrita Srivastava</span>. 
+            <a href="#" class="text-decoration-none text-light">All rights reserved.</a>
+          </p>
+          <p class="mb-0 text-center text-md-end">
+            <a href="#" class="text-decoration-none text-light">Back to top</a>
+          </p>
+        </div>
+    </footer>
+         
+</body>
+</html>
